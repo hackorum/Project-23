@@ -78,8 +78,8 @@ function keyPressed() {
 		packageBody.position.x = helicopterSprite.x;
 	}
 	if (keyCode === DOWN_ARROW) {
-		// packageBody.position.x != helicopterSprite.x;
-		// packageBody.position.y != helicopterSprite.y;
+		// packageBody.position.x = packageBody.position.x;
+		//  packageBody.position.y = packageBody.position.y;
 		// packageBody.position.y = helicopterSprite.y;
 		// packageBody.position.x = helicopterSprite.x;
 		Body.setStatic(packageBody, false);
