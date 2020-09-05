@@ -36,7 +36,7 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
 	World.add(world, ground);
 	 
-    dzp1 =  Bodies.rectangle(width/2, 640, 200, 20 , {isStatic:true} );
+        dzp1 =  Bodies.rectangle(width/2, 640, 200, 20 , {isStatic:true} );
 	World.add(world, dzp1);
 
 	dzp2 =  Bodies.rectangle(width/2-100, 600, 20, 100 , {isStatic:true} );
@@ -69,3 +69,25 @@ function draw() {
   drawSprites();
  
 }
+
+function keyPressed(){
+  if(keyCode === RIGHT_ARROW){
+  helicopterSprite.x =  helicopterSprite.x + 2;
+  packageBody.position.x = packageBody.position.x + 2;
+}
+
+  if(keyCode === LEFT_ARROW){
+  helicopterSprite.x =  helicopterSprite.x - 2;	
+  packageBody.position.x = packageBody.position.x - 2;
+}
+	
+if(keyCode === UP_ARROW){
+  helicopterSprite.y =  helicopterSprite.y - 2;	
+  packageBody.position.y = packageBody.position.y - 2;
+}
+
+if(keyCode === UP_ARROW){
+  helicopterSprite.y =  helicopterSprite.y + 2;	
+  packageBody.position.y = packageBody.position.y +2;
+}
+	
