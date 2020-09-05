@@ -90,4 +90,5 @@ if(keyCode === UP_ARROW){
   helicopterSprite.y =  helicopterSprite.y + 2;	
   packageBody.position.y = packageBody.position.y +2;
 }
-	
+
+}	
